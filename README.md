@@ -9,23 +9,31 @@ Let's look at a simple example:
 
 ![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Math2.png)
 
-Furthermore, "the gradient points in the direction of the greatest rate of increase of the function, and its magnitude is the slope of the graph in that direction"([wikipedia](https://en.wikipedia.org/wiki/Gradient)). This is critical, for in this example the gradient is used to minimize our loss function. As our goal is linear regression, we can visualize our loss surface as such...
+Furthermore, "the gradient points in the direction of the greatest rate of increase of the function, and its magnitude is the slope of the graph in that direction"([wikipedia](https://en.wikipedia.org/wiki/Gradient)). This is critical, for in this example the gradient is used to minimize our error function (aka loss function).
 
 ![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/GD_Visualization2.png)
 
-The red arrow indicates what we want, the global minimum, but since the gradient "points in the direction of the greatest rate of increase" this is in the total oposite direction (with an arrow pointing up) 
+The red arrow indicates what we want, the global minimum, but since the gradient "points in the direction of the greatest rate of increase" this is in the total oposite direction (with an arrow pointing up). Understanding this difference is important for the code implementation and this will be refrenced later on.
+
 Lets use the Mean Absolute Error as our loss function:
-#![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Math5.png)
-But since this is an example of [Stochrastic GD and not Batch GD](https://stats.stackexchange.com/questions/49528/batch-gradient-descent-versus-stochastic-gradient-descent), thus for each datapoint along the way we can calculate the Absolute Error (same thing as MAE but just not averaged).
-#![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Math3.png)
 
+![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Math5.png)
 
+But since this is an example of [Stochrastic GD and not Batch GD](https://stats.stackexchange.com/questions/49528/batch-gradient-descent-versus-stochastic-gradient-descent), thus for each x,y data point pair along the way we can calculate the Absolute Error (same thing as MAE but just not averaged).
 
-#![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Math4.png)
+![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Math3.png)
 
-#![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Math6.png)
+Now, if we compute the gradient of J, we now have information about how 
 
-#![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Output_Figure.png)
+![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Partial_Derivative.png)
+
+![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Partial_Derivative2.png)
+
+![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Math4.png)
+
+![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Math6.png)
+
+![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Output_Figure.png)
 
 
 
