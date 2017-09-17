@@ -1,7 +1,7 @@
 
 Stochastic Gradient Descent(GD) for Linear Regression:
 
-This post is inspired by Matt Nedrich's [blog post](https://spin.atomicobject.com/2014/06/24/gradient-descent-linear-regression/). This is a great introduction to GD, but I want to delve into the math a little more, and use a different loss function. I highly recommend reading Matt's blog post and also watching Siraj Raval's [youtube video](https://www.youtube.com/watch?v=xRJCOz3AfYY) on this topic. Just to be clear there are faster and less computationally expensive ways to perform linear regression, but we are just using it as a way to show how gradient descent works.
+This post is inspired by Matt Nedrich's [blog post](https://spin.atomicobject.com/2014/06/24/gradient-descent-linear-regression/). This is a great introduction to GD, but I want to delve into the math a little more, and use a different loss function. I highly recommend reading Matt's blog post and also watching Siraj Raval's [youtube video](https://www.youtube.com/watch?v=xRJCOz3AfYY) on this topic. Also, we will be using a toy data set (the same dataset that Siraj used). Just to be clear there are faster and less computationally expensive ways to perform linear regression, but we are just using it as a way to show how gradient descent works.
 
 Let's begin with a refresher of the linear regression setup. The goal is to generate the line that is closest to as many data points as possible. Hence we can define our error (or loss) function to be representative of the mean distance between all data points and our line. Let’s use the Mean Absolute Error as our loss function:
 
@@ -26,11 +26,11 @@ Let's visualize this with another example. Consider that we want to know how the
 
 ![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Partial_Derivative.png)
 
-Now plotting error vs b in 2 space.Images derived from [Wikipedia](https://en.wikipedia.org/wiki/Partial_derivative).
+Now plotting error vs b in 2 space. Images derived from [Wikipedia](https://en.wikipedia.org/wiki/Partial_derivative).
 
 ![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Partial_Derivative2.png)
 
-The arrow is up because the "points in the direction of the greatest rate of increase", yet we want to change b in the opposite direction. Thus we can redefine b to move in the opposite direction as the gradient.Note the learning rate is just a hyper-parameter that influences how quickly these changes to m and b occur.
+The arrow is up because the "points in the direction of the greatest rate of increase", yet we want to change b in the opposite direction. Thus we can redefine b to move in the opposite direction as the gradient. Note the learning rate is just a hyper-parameter that influences how quickly these changes to m and b occur.
 
 ![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Math4.png)
 
