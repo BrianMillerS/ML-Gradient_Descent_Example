@@ -5,9 +5,7 @@ This post is inspired by Matt Nedrich's [blog post](https://spin.atomicobject.co
 
 Let's begin with a refresher of the linear regression setup. The goal is to generate the line that is closest to as many data points as possible. Hence we can define our error (or loss) function to be representative of the mean distance between all data points and our line. Let’s use the Mean Absolute Error as our loss function:
 
-<kbd>
-  <![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Math1.png)>
-<kbd>
+![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Math1.png)
 
 But since this is an example of [Stochrastic GD and not Batch GD](https://stats.stackexchange.com/questions/49528/batch-gradient-descent-versus-stochastic-gradient-descent), thus for each x,y data point pair along the way we can calculate the Absolute Error (same thing as MAE but just not averaged).
 
