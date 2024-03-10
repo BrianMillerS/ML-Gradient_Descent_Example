@@ -2,7 +2,7 @@
 
 <h3>Summary:</h3>  
 
-Understanding the mathematical intricacies behind machine learning models is pivotal. From choosing the right model, data preparation, model tuning and evaluation, understanding how the model works is key. This repository unpacks the calculus behind stochastic gradient descent applied to linear regression. 
+Understanding the mathematical intricacies behind machine learning models is pivotal to the whole data science process. From choosing the right model, data preparation, model tuning and evaluation, understanding how the model works is key. This repository unpacks the calculus behind stochastic gradient descent applied to linear regression. 
 
 <h3>Introduciton:</h3>  
 We will be using a toy data set to predict the number of calories burned given how far an athlete rode his/her bike. We will use gradient descent to perform a simple linear regression, and then benchmark our results using the least squares method. To be clear, there are faster and less computationally expensive ways to perform linear regression, but we are just using it as a platform to show how gradient descent works.
