@@ -30,7 +30,7 @@ Now plotting error vs b in two dimensional space.
 
 ![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Partial_Derivative2.png)
 
-The arrow is up because the gradient points in the direction of the greatest rate of increas, yet we want to change b in the opposite direction. Thus we can redefine b to move in the opposite direction as the gradient. Note the learning rate is just a hyper-parameter that influences how quickly these changes to m and b occur.
+The arrow is up because the gradient points in the direction of the greatest rate of increase, yet we want to change b in the opposite direction. Thus we can redefine b to move in the opposite direction as the gradient. Note the learning rate is just a hyper-parameter that influences how quickly these changes to m and b occur.
 
 ![alt text](https://raw.githubusercontent.com/BrianSMiller/ML-Gradient_Descent_Example/master/Math4.png)
 
