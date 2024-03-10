@@ -1,5 +1,6 @@
+<h1 align="center">Understanding the math behind your model: Stochastic Gradient Descent</h1>  
 
-Understanding the math behind your model: Stochastic Gradient Descent
+<h3>Summary:</h3>  
 
 This post is inspired by Matt Nedrich's [blog post](https://spin.atomicobject.com/2014/06/24/gradient-descent-linear-regression/) which is a great introduction to gradient descent, but I want to delve into the math a little more, and use a different loss function. We will be using a toy data set to predict the number of calories burned given how far an athlete rode his/her bike. We will use gradient descent to perform a simple linear regression, and then benchmark our results using the least squares method. To be clear, there are faster and less computationally expensive ways to perform linear regression, but we are just using it as a platform to show how gradient descent works.
 
