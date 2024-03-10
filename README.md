@@ -5,7 +5,7 @@
 Understanding the mathematical intricacies behind machine learning models is pivotal to the whole data science process. From choosing the right model, data preparation, model tuning and evaluation, understanding how the model works is key. This repository unpacks the calculus behind stochastic gradient descent applied to linear regression. 
 
 <h3>Summary:</h3>  
-We will be using a toy data set to predict the number of calories burned given how far an athlete rode his/her bike. We will use gradient descent to perform a simple linear regression, and then benchmark our results using the least squares method.
+We will be using a toy data set to predict the number of calories burned given how far an athlete rode his/her bike. We will use gradient descent to perform a simple linear regression, and then benchmark our results using the least squares method.  
 
 Let's begin with a refresher of the linear regression setup. The goal is to generate the line that is closest to as many data points as possible. Hence we can define our error (or loss) function to be representative of the mean distance between all data points and our line. Let’s use the Mean Absolute Error as our loss function:
 
