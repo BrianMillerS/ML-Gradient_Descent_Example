@@ -1,4 +1,4 @@
-<h1 align="center">Understanding the math behind your model: Stochastic Gradient Descent</h1>  
+<h1 align="center">The Math Behind Your Model: Stochastic Gradient Descent</h1>  
 
 <h3>Summary:</h3>  
 
